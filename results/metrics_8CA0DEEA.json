@@ -1,0 +1,49 @@
+{
+    "job_id": "8CA0DEEA",
+    "timestamp": "2026-06-02T07:47:48.882233",
+    "status": "complete",
+    "inputs": {
+        "E_fiber_GPa": 380.0,
+        "E_matrix_GPa": 90.0,
+        "E_voigt_GPa": 220.5,
+        "fiber_volume_fraction": 0.45,
+        "nu": 0.2,
+        "applied_stress_MPa": 300.0,
+        "length_mm": 100.0,
+        "width_mm": 20.0
+    },
+    "fem_outputs": {
+        "max_axial_displacement_mm": 0.130566,
+        "max_lateral_displacement_mm": 0.006134,
+        "axial_strain": 0.00130566,
+        "effective_modulus_GPa": 229.7681,
+        "modulus_error_pct": 4.2,
+        "n_nodes": 126,
+        "n_elements": 200
+    },
+    "analysis_checks": {
+        "Stress-Strain Consistency": {
+            "passed": true,
+            "error_pct": 0.0,
+            "tolerance": 10
+        },
+        "Poisson Effect": {
+            "passed": true,
+            "error_pct": 17.45,
+            "tolerance": 20
+        },
+        "Modulus Consistency": {
+            "passed": true,
+            "error_pct": 4.2,
+            "tolerance": 15
+        }
+    },
+    "overall_passed": true,
+    "issues": [],
+    "warnings": [],
+    "files": {
+        "plot": "/content/drive/MyDrive/MCL_Orchestrator/results/fem_results_8CA0DEEA.png",
+        "log": "/content/drive/MyDrive/MCL_Orchestrator/logs/pipeline.log",
+        "state": "/content/drive/MyDrive/MCL_Orchestrator/logs/pipeline_state.json"
+    }
+}
